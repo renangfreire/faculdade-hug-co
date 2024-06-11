@@ -1,0 +1,29 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.company-title{
+    font-family: $title-fonts;
+}
+
+.title{
+    color: $gray-100;
+}
+
+.divisor{
+    margin-top: 8rem;
+    width: 50rem;
+    border-bottom: 2px solid $black-100;
+}
+
+.article-author{
+    width: 50rem;
+    
+    .about-author{
+        padding-top: 1rem;
+        font-size: $sm-font;
+        margin-bottom: 0;
+    }
+}

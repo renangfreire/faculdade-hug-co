@@ -1,0 +1,41 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    padding: 20px 0;
+    transition: .4s;
+
+    &.scrolled{
+        background-color: $black-200;
+    }
+}
+
+.navbar h1 a {
+    text-decoration: none;
+    font-size: $xl-font;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    font-size: $medium-font;
+}

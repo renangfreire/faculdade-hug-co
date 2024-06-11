@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: $base-fonts;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: $white-900;
+}
+
+body{
+    background-color: $white-900;
+    color: $black-100;
+}
