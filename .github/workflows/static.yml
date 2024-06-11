@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install dependencies and build
-        run: npm ci && parcel build
+        run: npm ci && parcel build index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
