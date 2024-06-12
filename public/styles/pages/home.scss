@@ -1,0 +1,267 @@
+@import '../style.scss';
+@import '../components/buttons';
+@import '../components/header';
+
+
+.call-action{
+    button {
+        @include btnDiagonalHover($black-100, $white-900);
+    }
+}
+
+
+.header{
+    @include header("../../assets/images/black-woman-tecnology.jpg", 0 -50px);
+    
+    .header-content{
+        @include header-content();
+        display: flex;
+        justify-content: center;
+
+        gap: $xxxl-font;
+    }
+}
+
+.about-container{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+        padding-top: $xxxl-font;
+        padding-bottom: $xxxl-font;
+
+        .img-container{
+            img{
+                width: 30rem;
+            }
+        }
+        
+        .about-description{
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+
+            font-size: $medium-font;
+            padding: $lg-font $xxxl-font;
+
+            gap: $xl-font;
+        }
+    }
+}
+
+// Lugarzinho que vou chorar com media querie
+.pioneers-container{
+    padding: $xxxl-font 0; 
+    background-color: $black-200;
+    color: $white-900;
+
+    // height: 70rem;
+
+    .container{
+        height: 100%;
+        display: flex;
+
+        justify-content: space-between;
+        flex-direction: column;
+
+        .pioneers-title{
+            display: flex;
+            align-items: end;
+            gap: $xl-font;
+            overflow: hidden;
+
+            h3 {
+                font-family: $title-fonts;
+                font-size: $xxxl-font;
+            }
+
+            p{
+                margin-top: $xl-font;
+                font-size: $xl-font;
+                line-height: 1.5;
+            }
+
+            .mozaico-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                img:first-of-type{
+                    width: 20rem;
+                    
+                    position: relative;
+                    right: -40px;
+                }
+                
+                img:nth-of-type(2){
+                    width: 20rem;
+            
+                    position: relative;
+                    right: 0px;
+                    top: 80px;
+
+                    z-index: 1;
+                }
+            
+                img:nth-of-type(3){
+                    width: 20rem;
+            
+                    position: relative;
+                    right: -90px;
+                    top: -20px;
+                }
+            
+                img:nth-of-type(4){
+                    width: 25rem;
+            
+                    position: relative;
+                    right: -60px;
+                }
+            }
+        }
+
+        .pioneers-description{
+            padding-top: $xxxl-font;
+            font-size: $sm-font;
+
+            p + p{
+                margin-top: $lg-font;
+            }
+        }
+    }
+}
+
+
+.about-pioneers-container{
+    color: $gray-100;
+
+    .pioneer-container{
+        display: flex;
+        gap: $xxxl-font;
+       
+        > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .pioneers-title{
+                h3{
+                    font-family: $title-fonts;
+                    font-size: $xxxl-font;
+                }
+    
+                p{
+                    font-family: $title-fonts;
+                    font-size: $xxl-font;
+                }
+            }
+    
+            .pioneer-description{
+                font-size: $medium-font;
+    
+                p{
+                    margin-top: $xl-font;
+                }
+            }
+        }
+        
+        .pioneer-image{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 40rem;
+            }
+
+            span{
+                margin-top: .5rem;
+                font-size: $vsm-font;
+            }
+        }
+    }
+
+    .pioneer-divisor{
+        width: 100%;
+        display: inline-block;
+        border: 1px solid $gray-900;
+        margin: $xxxl-font 0;
+    }
+
+}
+
+.challenges-container{
+    background-color: $gray-900;
+    padding: $xxxl-font 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+        .about-challenges{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            h3{
+                font-family: $title-fonts;
+                font-size: $xxl-font;
+            }
+    
+            p{
+                margin-top: $sm-font;
+                font-size: $sm-font;
+            }
+        }
+
+        img{
+            width: 50rem;
+        }
+   }
+}
+
+
+.female-future-container{
+    padding: $xxxl-font 0;
+
+    .container{
+        display: flex;
+        gap: $xxxl-font;
+
+        .female-future-title{
+            h3{
+                font-family: $title-fonts;
+                font-size: $xxxl-font;
+            }
+    
+            img{ 
+                margin-top: $xl-font;
+                width: 40rem;
+            }
+        }
+    
+        .female-future-about{
+            position: relative;
+
+            p{
+                font-size: $medium-font;
+                & + p {
+                    margin-top: $lg-font;
+                }
+            }
+
+            .company-action-click{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                a{
+                    text-decoration: underline;
+                    color: $a-link-color;
+                }
+            }
+        }
+    }
+    
+}

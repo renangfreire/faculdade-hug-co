@@ -9,6 +9,7 @@ html{
     font-size: 62.5%;
     font-family: $base-fonts;
     scroll-behavior: smooth;
+    background-color: $white-900;
 }
 
 a{
@@ -19,7 +20,16 @@ a:link, a:visited{
     color: $white-900;
 }
 
+button{
+    cursor: pointer;
+    font-family: $base-fonts;
+}
+
 body{
     background-color: $white-900;
     color: $black-100;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
 }

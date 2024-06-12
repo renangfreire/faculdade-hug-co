@@ -1,0 +1,45 @@
+@mixin btnDefault($color: $black-100, $bg: $white-900){
+    padding: 1rem 4rem;
+
+    border: 0;
+    border-radius: 12px;
+
+    font-size: $sm-font;
+}
+
+@mixin btnDiagonalHover($bgColor, $hoverColor){
+    @include btnDefault();
+
+    z-index: 1;
+    position: relative; 
+    overflow: hidden;
+
+    transition: color .3s;
+
+    &:before, &:after{
+        background-color: $bgColor;
+        content: '';
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        left: -70%;
+        top: 0;
+        transform: skew(50deg);
+        transition: .6s;
+        transform-origin: top left;
+        width: 0%;
+    }
+
+    &:hover{
+        transition: background .3s .3s;
+
+        color: $hoverColor;
+        background-color: $bgColor;
+    }
+    &:hover::after{
+       width: 170%;
+       height: 100%;
+
+       background-color: $bgColor;
+    }
+}
