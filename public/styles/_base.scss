@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    max-width: 1248px;
     margin: 0 auto;
     padding: 0 $xxxl-font;
 }
@@ -12,18 +12,3 @@
     color: $gray-100;
 }
 
-.divisor{
-    margin-top: 8rem;
-    width: 50rem;
-    border-bottom: 2px solid $black-100;
-}
-
-.article-author{
-    width: 50rem;
-    
-    .about-author{
-        padding-top: 1rem;
-        font-size: $sm-font;
-        margin-bottom: 0;
-    }
-}

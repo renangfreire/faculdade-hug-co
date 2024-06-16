@@ -21,6 +21,9 @@
             <nav>
                 <ul>
                     <li><a href="/pages/control.html">Control Page</a></li>
+                    <li><a href="/pages/interstellar.html">Interstellar Page</a></li>
+                    <li><a href="/pages/newgame_anime.html">New Game Page</a></li>
+                    <li><a href="/pages/mercado-tecnologico.html">Mercado Tecnologico Page</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
@@ -38,7 +41,9 @@
                    </div>
                   
                     <div class="call-action">
-                        <button>Ver artigos</button>                        
+                        <a href="/pages/news.html">
+                            <button>Ver artigos</button> 
+                        </a>                       
                     </div>
                 </div>
             </div>
@@ -47,7 +52,19 @@
         <section class="about-container">
             <div class="container">
                 <div class="img-container">
-                    <img src="/public/assets/images/japanese-woman.jpg" alt="">
+                    <picture>
+                        <img 
+                        loading="lazy"
+                        role="presentation"
+                        srcset="
+                            /public/assets/images/japanese-woman.jpg?width=1200 700w
+                            /public/assets/images/japanese-woman.jpg?width=2400 1000w
+                            /public/assets/images/japanese-woman.jpg?width=3600 1200w
+                            /public/assets/images/japanese-woman.jpg
+                        "
+                        decoding="async"
+                        src="/public/assets/images/japanese-woman.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="about-description">
                     <p>Na vasta paisagem da tecnologia, as vozes e contribuições das mulheres têm sido, por muito tempo, tanto subestimadas quanto sub-representadas. No entanto, em meio a essa narrativa muitas vezes dominada pelo masculino, há uma crescente onda de mulheres que estão desafiando os estereótipos e deixando sua marca indelével no mundo da inovação tecnológica.</p>
@@ -156,7 +173,7 @@
                     </div>
 
                     <div class="company-action-click">
-                        <p>Fique por dentro das últimas <a href="#"> notícias sobre tecnologia </a> com a UG Co.</p>
+                        <p>Fique por dentro das últimas <a href="#">notícias sobre tecnologia</a> com a UG Co.</p>
                     </div>
                 </div>
         </div>

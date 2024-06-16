@@ -1,0 +1,31 @@
+@import '../style.scss';
+@import '../components/buttons';
+@import '../components/cards';
+@import '../components/header';
+@import '../components/main_patterns';
+
+.header{
+    height: 0;
+}
+
+.navbar{
+    position: sticky !important;
+}
+
+.news-section{
+    background-color: $white-900;
+    padding: $xxxl-font 0;
+}
+
+.cards{
+    display: inline;
+
+    .card{
+        @include card($theme: 'dark')
+    }
+    .card + .card{
+        margin-top: $xl-font;
+    }
+}
+
+
