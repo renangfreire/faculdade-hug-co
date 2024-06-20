@@ -1,0 +1,40 @@
+{
+  "pages": [
+      {
+        "pg_name": "belas_mulheres",
+        "bg_path": "/public/assets/images/belas-mulheres.png",
+        "title": "Belas Mulheres",
+        "sub_title": "CRÔNICA"
+      },
+      {
+        "pg_name": "control",
+        "bg_path": "/public/assets/images/Control-Hiss-Resonance.avif",
+        "title": "Control",
+        "sub_title": "Eleva o padrão de qualidade e representatividade no mercado."
+      },
+      {
+        "pg_name": "interstellar",
+        "bg_path": "/public/assets/images/anne-inter.jpg",
+        "title": "Protagonismo Feminino em Interstellar",
+        "sub_title": "Ciência e Emoção Entrelaçadas"
+      },
+      {
+        "pg_name": "newgame_anime",
+        "bg_path": "/public/assets/images/aoba-newgame.png",
+        "title": "New Game!",
+        "sub_title": "Animação japonesa mostra força das mulheres no desenvolvimento de games."
+      },
+      {
+        "pg_name": "mercado-tecnologico",
+        "bg_path": "/public/assets/images/mulheres-tecnologia.png",
+        "title": " Mercado tecnológico tem ausência feminina",
+        "sub_title": "Disparidade entre lideranças chega a 10 para 1."
+      },
+      {
+        "pg_name": "quebrando_barreiras",
+        "bg_path": "/public/assets/images/quebrando_barreiras_bg.png",
+        "title": "Quebrando Barreiras e Construindo Futuro",
+        "sub_title": "REPORTAGEM"
+      }
+  ]
+}

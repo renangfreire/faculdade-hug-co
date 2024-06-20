@@ -1,0 +1,35 @@
+<section class="mais-recentes">
+    <div class="container">
+        <h2 >Mais Recentes da UG Co.</h2>
+        <div class="cards">
+
+            <% const renderedPages = [] %>
+            <% for(let i = 0; i < 50; i++){  %>
+                <% const randomIndex = Math.floor(Math.random() * ((pages.length-1) + 1)) %>
+                <% const currPage = pages[randomIndex] %>
+                <% const alreadyExistPage = renderedPages.find(page => page?.pg_name === currPage.pg_name) %>
+                <% if(!alreadyExistPage && currPage.pg_name !== actualPage) { %>
+                    <% renderedPages.push(currPage) %>
+                <% } %>
+
+                <% if(renderedPages.length === 6) { %>
+                    <% break; %>
+                <% } %>
+            <% } %>
+
+            <% renderedPages.forEach(page => { %>
+                <a class="card" href="/pages/<%= page.pg_name %>.ejs">
+                    <div>
+                        <img class="card-image" src="<%= page.bg_path %>" alt="<%= page.title %>">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title"><%= page.title %></h3>
+                        <div class="card-description-container">
+                            <div class="card-description"><%= page.sub_title%></div>
+                        </div>
+                    </div>
+                </a>
+            <% }) %>
+        </a>
+    </div>
+</section>

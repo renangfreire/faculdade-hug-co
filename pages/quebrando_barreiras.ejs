@@ -14,17 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <h1><a href="/pages/index.html" class="company-title">Urban Gazette Co.</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include(`./partials/header`) %>
 
     <main>
         <section class="header">
@@ -95,105 +85,11 @@
                 </div>
             </div>
         </section>
-        <section class="mais-recentes">
-            <div class="container">
-                <h2 >Mais Recentes da UG Co.</h2>
-                <div class="cards">
-                    <a class="card">
-                        <div class="card-image">
-                            <img src="https://i.imgur.com/n7C0l5Q.jpg" alt="Imagem de um teclado">
-                        </div>
-                        <div class="card-content">
-                            <h3>Tecnologia ainda é uma "área masculina"?</h3>
-                            <p>O que as novas gerações pensam sobre o assunto e qual o panorama atual nos cursos de graduação</p>
-                            <p class="card-category">Gestão</p>
-                        </div>
-                    </a>
-                    <a class="card">
-                        <div>
-                            <img class="card-image" src="/public/assets/images/medium.webp" alt="Imagem de um homem olhando para o céu">
-                        </div>
-                        <div class="card-content">
-                            <div>
-                                <div class="entertainment-badge">Entretenimento</div>
-                            </div>
-                            <h3 class="card-title">Protagonismo Feminino em Interstellar</h3>
-                            <div class="card-description-container">
-                                <div class="card-description">Trama de ficção cientifica explora temas complexos como viagem no tempo, buracos negros e a sobrevivência da humanidade.</div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="card">
-                        <div class="card-image">
-                            <img src="https://i.imgur.com/mZ6mG4L.jpg" alt="Imagem de um teclado">
-                        </div>
-                        <div class="card-content">
-                            <p class="card-category">Tecnologias</p>
-                            <h3>Melhores linguagens de programação para sistemas comerciais</h3>
-                            <p>Veja como a Pirâmide de Kelsen organiza as normas...</p>
-                        </div>
-                    </a>
-                    <a class="card">
-                        <div class="card-image">
-                            <img src="https://i.imgur.com/4jH8q0i.jpg" alt="Imagem de um homem olhando para um computador">
-                        </div>
-                        <div class="card-content">
-                            <h3>Módulos básicos de um ERP</h3>
-                            <p>Veja como a Pirâmide de Kelsen organiza as normas jurídicas e sua...</p>
-                            <p class="card-category">Gestão</p>
-                        </div>
-                    </a>
-                    <a class="card">
-                        <div class="card-image">
-                            <img src="https://i.imgur.com/Y7J750q.jpg" alt="Imagem de um homem olhando para um computador">
-                        </div>
-                        <div class="card-content">
-                            <h3>Onde é usado o sistema ERP?</h3>
-                            <p>Veja como a Pirâmide de Kelsen organiza as normas jurídicas e sua...</p>
-                            <p class="card-category">Gestão</p>
-                        </div>
-                    </a>
-                    <a class="card">
-                        <div class="card-image">
-                            <img src="https://i.imgur.com/0kZ3O6q.jpg" alt="Imagem de um teclado">
-                        </div>
-                        <div class="card-content">
-                            <h3>Inteligência artificial auxiliando a contabilidade.</h3>
-                            <p>Veja como a Pirâmide de Kelsen organiza as normas...</p>
-                            <p class="card-category">Tecnologias</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+        <%- include(`./partials/recents_news`, {actualPage: "quebrando_barreiras"}) %>
     </main>
 
-    <footer>
-        <div class="container">
-            <section class="contato">
-                    <div class="contato-info">
-                        <h3>Urban Gazette Co.</h3>
-                        <img src="/public/assets/images/ug-co-logo.svg" alt="">
-                    </div>
-                    <div class="contato-info">
-                        <h3>Suporte</h3>
-                        <p>(11) 3549-6570 (dentro do estado de SP)</p>
-                        <p>0800 773 6633 (fora do estado de SP)</p>
-                        <p>Atendimento das 09h às 18h</p>
-                    </div>
-                    <div class="contato-info">
-                        <h3>Sobre Nós</h3>
-                        <p><a href="#">Canal de Ética</a></p>
-                        <p><a href="#">Política de Cookies</a></p>
-                        <p><a href="#">Política de Privacidade</a></p>
-                        <p><a href="#">Contato</a></p>
-                        <p><a href="#">Transparência Salarial</a></p>
-                    </div>
-            </section>
-            <p class="lyrics">NexGen Consulting | Av. Paulista, 2000 - 8º andar - Bela Vista, São Paulo, SP – 01311-934</p>
-            <p class="lyrics">&copy; 2024 Urban Gazette Co. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-     <script type="module" src="/src/index.js"></script>
+    <%- include(`./partials/footer`) %>
+
+    <script type="module" src="/src/index.js"></script>
 </body>
 </html>

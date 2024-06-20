@@ -3,7 +3,7 @@
 @import '../components/main_patterns';
 
 .header{
-    @include header("../../assets/images/Control-Hiss-Resonance.avif");
+    @include header("/public/assets/images/Control-Hiss-Resonance.avif");
 
     .header-content{
         @include header-content();

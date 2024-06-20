@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gazette Co.</title>
+    <link rel="stylesheet" href="/public/styles/pages/news.scss">
+
+    <!-- Fonts -->
+    <link rel="shortcut icon" href="/public/assets/images/ug-co-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/public/assets/fonts/higuen-font/stylesheet.css">
+    <link rel="stylesheet" href="/public/assets/fonts/nourd-font/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar scrolled">
+        <div class="container">
+            <h1><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/pages/news.ejs">Ver notícias</a></li>
+                    <li><a href="#footer">Sobre nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="news-section">
+            <div class="container">
+                <div class="cards">
+                    <% pages.forEach(page => {  %>
+                        <a class="card" href="/pages/<%= page.pg_name %>.ejs">
+                            <div>
+                                <img class="card-image" src="<%= page.bg_path %>" alt="<%= page.title %>">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title"><%= page.title %></h3>
+                                <div class="card-description-container">
+                                    <div class="card-description"><%= page.sub_title%></div>
+                                </div>
+                            </div>
+                        </a>
+                    <% }) %>
+                    <!-- <a class="card">
+                        <div class="card-image">
+                            <img src="https://i.imgur.com/n7C0l5Q.jpg" alt="Imagem de um teclado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tecnologia ainda é uma "área masculina"?</h3>
+                            <p>O que as novas gerações pensam sobre o assunto e qual o panorama atual nos cursos de graduação</p>
+                            <p class="card-category">Gestão</p>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div>
+                            <img class="card-image" src="/public/assets/images/medium.webp" alt="Imagem de um homem olhando para o céu">
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <div class="entertainment-badge">Entretenimento</div>
+                            </div>
+                            <h3 class="card-title">Protagonismo Feminino em Interstellar</h3>
+                            <div class="card-description-container">
+                                <div class="card-description">Trama de ficção cientifica explora temas complexos como viagem no tempo, buracos negros e a sobrevivência da humanidade.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div class="card-image">
+                            <img src="https://i.imgur.com/mZ6mG4L.jpg" alt="Imagem de um teclado">
+                        </div>
+                        <div class="card-content">
+                            <p class="card-category">Tecnologias</p>
+                            <h3>Melhores linguagens de programação para sistemas comerciais</h3>
+                            <p>Veja como a Pirâmide de Kelsen organiza as normas...</p>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div class="card-image">
+                            <img src="https://i.imgur.com/4jH8q0i.jpg" alt="Imagem de um homem olhando para um computador">
+                        </div>
+                        <div class="card-content">
+                            <h3>Módulos básicos de um ERP</h3>
+                            <p>Veja como a Pirâmide de Kelsen organiza as normas jurídicas e sua...</p>
+                            <p class="card-category">Gestão</p>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div class="card-image">
+                            <img src="https://i.imgur.com/Y7J750q.jpg" alt="Imagem de um homem olhando para um computador">
+                        </div>
+                        <div class="card-content">
+                            <h3>Onde é usado o sistema ERP?</h3>
+                            <p>Veja como a Pirâmide de Kelsen organiza as normas jurídicas e sua...</p>
+                            <p class="card-category">Gestão</p>
+                        </div>
+                    </a>
+                    <a class="card">
+                        <div class="card-image">
+                            <img src="https://i.imgur.com/0kZ3O6q.jpg" alt="Imagem de um teclado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Inteligência artificial auxiliando a contabilidade.</h3>
+                            <p>Veja como a Pirâmide de Kelsen organiza as normas...</p>
+                            <p class="card-category">Tecnologias</p>
+                        </div>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include(`./partials/footer`) %>
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>

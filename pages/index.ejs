@@ -15,23 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <h1><a href="#" class="company-title">Urban Gazette Co.</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/pages/control.html">Control</a></li>
-                    <li><a href="/pages/interstellar.html">Interstellar</a></li>
-                    <li><a href="/pages/newgame_anime.html">New Game</a></li>
-                    <li><a href="/pages/mercado-tecnologico.html">Mercado Tecnologico</a></li>
-                    <li><a href="/pages/belas_mulheres.html">Belas Mulheres</a></li>
-                    <li><a href="/pages/quebrando_barreiras.html">Quebrando Barreiras</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    <%- include(`./partials/header`) %>
     <main>
+
+        <%= locals.foo %>
         <section class="header">
             <div class="header-shadow"></div> 
             <div class="container">
@@ -42,7 +29,7 @@
                    </div>
                   
                     <div class="call-action">
-                        <a href="/pages/news.html">
+                        <a href="/pages/news.ejs">
                             <button>Ver artigos</button> 
                         </a>                       
                     </div>
@@ -181,34 +168,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <section class="contato">
-                    <div class="contato-info">
-                        <h3>Urban Gazette Co.</h3>
-                        <img src="/public/assets/images/ug-co-logo.svg" alt="">
-                    </div>
-                    <div class="contato-info">
-                        <h3>Suporte</h3>
-                        <p>(11) 3549-6570 (dentro do estado de SP)</p>
-                        <p>0800 773 6633 (fora do estado de SP)</p>
-                        <p>Atendimento das 09h às 18h</p>
-                    </div>
-                    <div class="contato-info">
-                        <h3>Sobre Nós</h3>
-                        <p><a href="#">Canal de Ética</a></p>
-                        <p><a href="#">Política de Cookies</a></p>
-                        <p><a href="#">Política de Privacidade</a></p>
-                        <p><a href="#">Contato</a></p>
-                        <p><a href="#">Transparência Salarial</a></p>
-                    </div>
-            </section>
-            <p class="lyrics">NexGen Consulting | Av. Paulista, 2000 - 8º andar - Bela Vista, São Paulo, SP – 01311-934</p>
-            <p class="lyrics">&copy; 2024 Urban Gazette Co. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-    
+    <%- include(`./partials/footer`) %>
 
-     <script type="module" src="/src/index.js"></script>
+    <script type="module" src="/src/index.js"></script>
 </body>
 </html>

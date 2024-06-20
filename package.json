@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:dev": "parcel ./pages/index.html",
-    "build": "parcel build ./pages/index.html --public-url ./"
+    "start:dev": "parcel ./pages/index.ejs",
+    "build": "parcel build ./pages/index.ejs --public-url ./"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
     "parcel": "^2.12.0",
     "sass": "^1.77.4",
     "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "parcel-transformer-ejs": "^1.0.1"
   }
 }

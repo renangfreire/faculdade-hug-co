@@ -47,6 +47,10 @@
         
         .card-image {
             width: $img-card-size;
+            height: $img-card-size;
+            object-fit: cover;
+            object-position: center;
+            
             border-radius: 6px;
         }
         

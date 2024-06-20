@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gazette Co.</title>
+    <link rel="stylesheet" href="/public/styles/pages/control-page.scss">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/public/assets/fonts/higuen-font/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./public/assets/fonts/nourd-font/stylesheet.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include(`./partials/header`) %>
+    
+    <main>
+        <section class="header">
+            <div class="header-shadow"></div> 
+            <div class="container">
+                <div class="header-content">
+                    <div> 
+                        <p class="title-description">Control</p>
+                       <span class="title"> 
+                        Eleva o padrão de qualidade e 
+                        <h2>
+                            representatividade no mercado.
+                        </h2>
+                    </span>
+                    </div>
+                    <div>
+                        <p class="author">Por Felipe de Melo Fernandes</p>
+                        <p class="post-day">17/05/2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="container">
+                <h3 class="title">Sobre Control</h3>
+                <div>
+                    <p>Jesse Faden, figura feminina marcante nos games, protagoniza um dos melhores jogos lançados na década passada.</p>
+                    <p>Control, penúltimo lançamento da Remedy Entertainment e publicado pela 505 Games, é um jogo de ação e aventura voltado para o suspense. Desde sua estreia em 2019, o título recebeu uma grande visibilidade, diferentes prêmios importantes e definiu a protagonista como uma das figuras femininas mais marcantes do meio ao oferecer uma experiência única que desafia as convenções do gênero e redefine o padrão de qualidade para as próximas obras a serem lançadas.</p>
+                    <p>No centro da narrativa está Jesse Faden, muito bem interpretada por Courtney Hope, que decide investigar os segredos obscuros da agência governamental FBC (Federal Bureau of Control), uma organização que estuda e escamoteia eventos paranormais. Jesse acredita que esses casos têm relação com o seu passado, o que acaba por envolvê-la em uma trama complexa de conspirações e cenários sobrenaturais, culminando em sua inevitável ascensão como diretora da empresa.</p>
+                    <p>Ao mesmo tempo que desenvolve a trama investigativa e complexa, há também a mudança de cargo e desenvolvimento da personagem, o que não deixa de ser uma jornada de autodescoberta e empoderamento. Esse é um dos pontos mais interessantes da obra, que traz uma representação diferente de qualquer outro jogo com proposta parecida.</p>
+                    <p>De maneira bem singular, Control aborda questões de gênero e feminismo de modo bem discreto. Ao contrário de muitos jogos que direcionam as personagens femininas a papéis secundários ou estereotipados, Jesse é colocada no centro das atenções como uma protagonista forte, corajosa e complexa. Por mais que pareça que o foco seja apenas em enfrentar inimigos e desvendar mistérios, há também momentos de quebras de expectativa ao considerar os clichês do gênero, oferecendo uma reflexão sutil, mas perfeitamente aplicada, sobre igualdade e empoderamento feminino. Esses momentos são representados por pequenos diálogos e atitudes de personagens com o fato da protagonista se tornar diretora.</p>
+                </div>
+            
+                <div class="header-image">
+                    <img src="https://static1.gamerantimages.com/wordpress/wp-content/uploads/2021/01/Control-Hiss-Resonance.jpg" alt="Jesse Faden, protagonista de Control, em uma pose poderosa.">
+                </div>
+            
+                <div>
+                    <p>Ao mesmo tempo que desenvolve a trama investigativa e complexa, há também a mudança de cargo e desenvolvimento da personagem, o que não deixa de ser uma jornada de autodescoberta e empoderamento. Esse é um dos pontos mais interessantes da obra, que traz uma representação diferente de qualquer outro jogo com proposta parecida.</p>
+                    <p>De maneira bem singular, Control aborda questões de gênero e feminismo de modo bem discreto. Ao contrário de muitos jogos que direcionam as personagens femininas a papéis secundários ou estereotipados, Jesse é colocada no centro das atenções como uma protagonista forte, corajosa e complexa. Por mais que pareça que o foco seja apenas em enfrentar inimigos e desvendar mistérios, há também momentos de quebras de expectativa ao considerar os clichês do gênero, oferecendo uma reflexão sutil, mas perfeitamente aplicada, sobre igualdade e empoderamento feminino. Esses momentos são representados por pequenos diálogos e atitudes de personagens com o fato da protagonista se tornar diretora.</p>
+                </div>
+            
+
+                <div class="divisor"></div>
+
+                <div class="article-author">
+                    <p class="about-author">Felipe Fernandes é estudante de Análise e Desenvolvimento de Sistemas pela Fatec de Carapicuíba.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <%- include(`./partials/recents_news`, {actualPage: "control"}) %>
+    </main>
+
+    <%- include(`./partials/footer`) %>
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>
