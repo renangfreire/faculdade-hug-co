@@ -35,6 +35,24 @@
         "bg_path": "/public/assets/images/quebrando_barreiras_bg.png",
         "title": "Quebrando Barreiras e Construindo Futuro",
         "sub_title": "REPORTAGEM"
+      },
+      {
+        "pg_name": "mulher_programacao",
+        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "title": "“Mulher e programação? Não sei não”",
+        "sub_title": "CRÔNICA"
+      },
+      {
+        "pg_name": "mercury-13",
+        "bg_path": "/public/assets/images/mercury-13-bg.png",
+        "title": "Mercury 13",
+        "sub_title": "O espaço delas - PODCAST"
+      },
+      {
+        "pg_name": "berco-altalinguagem",
+        "bg_path": "/public/assets/images/berco-altalinguagem-bg.png",
+        "title": "O Berço da Alta Linguagem",
+        "sub_title": ""
       }
   ]
 }
