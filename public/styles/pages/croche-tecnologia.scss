@@ -1,0 +1,63 @@
+@import '../style.scss';
+@import '../components/buttons';
+@import '../components/header';
+@import '../components/main_patterns';
+
+.header{
+    @include header("/public/assets/images/croche-tecnologia-bg.jpg", center);
+    
+    .header-content{
+        @include header-content();
+        display: flex;
+        justify-content: center;
+
+        gap: $xxxl-font;
+
+        .brand-calling{
+            font-size: $lg-font;
+        }
+    }
+}
+
+.text-development{
+    @include textPatterns();
+    color: $gray-100;
+
+    & + & {
+        padding-top: 0;
+    }
+
+    .flex-text_img + .flex-text_img{
+        padding-top: $xxl-font;
+    }
+
+    .flex-text_img{
+        display: flex;
+        gap: $xxl-font;
+
+        .flex-image{
+            justify-content: center;
+    
+            img{
+                width: 30rem;
+            }
+        }
+    
+        .text-container{
+            padding: $xxl-font 0;
+
+            p + p {
+                margin-top: $xl-font;
+            }
+
+            li {
+                font-size: $medium-font;
+
+                & + li {
+                    margin-top: $vsm-font;
+                }
+            }
+        }
+        
+    }
+}

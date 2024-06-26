@@ -53,6 +53,12 @@
         "bg_path": "/public/assets/images/berco-altalinguagem-bg.png",
         "title": "O Berço da Alta Linguagem",
         "sub_title": ""
+      },
+      {
+        "pg_name": "croche-tecnologia",
+        "bg_path": "/public/assets/images/croche-tecnologia-bg.jpg",
+        "title": "Crochê e tecnologia",
+        "sub_title": "A interação da IA no universo manual "
       }
   ]
 }
