@@ -3,6 +3,11 @@
     background-image: url($urlImage);
     background-size: cover;
     background-position: $imgPosition;
+
+    @media (max-width: $layout-greatest-tablet) {
+        background-position: center;
+    }
+
     color: #fff;
     position: relative;
 
@@ -41,6 +46,11 @@
         h2 {
             font-family: $title-fonts;
             font-size: $title-xxxl-font;
+
+            @media (max-width: $layout-tablet) {
+                font-size: $xxxl-font;
+            }
+            
         }
 
         .title-description {

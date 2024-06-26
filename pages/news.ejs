@@ -15,17 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar scrolled">
-        <div class="container">
-            <h1><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/pages/news.ejs">Ver notícias</a></li>
-                    <li><a href="#footer">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include(`./partials/header`, {scrolled: true}) %>
 
     <main>
         <section class="news-section">
@@ -37,7 +27,11 @@
                                 <img class="card-image" src="<%= page.bg_path %>" alt="<%= page.title %>">
                             </div>
                             <div class="card-content">
-                                <h3 class="card-title"><%= page.title %></h3>
+                                <div class="card-title">
+                                    <h3>
+                                        <%= page.title %>
+                                    </h3>
+                                </div>
                                 <div class="card-description-container">
                                     <div class="card-description"><%= page.sub_title%></div>
                                 </div>

@@ -27,6 +27,10 @@
         
         img{
             width: 50rem;
+
+            @media (max-width: $layout-tablet) {
+                width: 100% !important;
+            }
         }
         
         p{
@@ -42,6 +46,10 @@
         margin-bottom: 2rem;
 
         img{
+            @media (max-width: $layout-tablet) {
+                max-height: 25rem;
+            }
+
             width: 90%;
             height: 100%;
         }
@@ -56,11 +64,20 @@
 .divisor{
     margin-top: 8rem;
     width: 50rem;
+
+    @media (max-width: $layout-tablet) {
+        width: 80%;
+    }
+
     border-bottom: 2px solid $black-100;
 }
 
 .article-author{
     width: 80rem;
+
+    @media (max-width: $layout-greatest-tablet) {
+        width: 100%;
+    }
     
     .about-author{
         padding-top: 1rem;
@@ -68,3 +85,15 @@
         margin-bottom: 0;
     }
 }
+
+.flex-text_img{
+    @media (max-width: $layout-tablet){
+        display: inline;
+        flex-direction: column;
+        
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+

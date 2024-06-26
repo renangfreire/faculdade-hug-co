@@ -13,6 +13,10 @@
 .header{
     @include header("../../assets/images/black-woman-tecnology.jpg", 0 -50px);
     
+    @media (max-width: 1368px) {
+        background-position: center;
+    }
+
     .header-content{
         @include header-content();
         display: flex;

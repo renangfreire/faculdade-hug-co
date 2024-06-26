@@ -1,5 +1,21 @@
-<header class="navbar">
-    <div class="container">
+<header class="navbar <% if(scrolled) { %>
+    <%= 'scrolled' %>
+ <% } %>">
+     <h1 class="mobile-logo"><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1>
+
+    <div class="mobile-nav">
+        <!-- <h1><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1> -->
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul class="menu">
+            <a href="/pages/news.ejs"><li>Ver notícias</li></a>
+            <a href="#footer"><li>Sobre nós</li></a>
+        </ul>
+    </div>
+    <div class="default-nav container">
         <h1><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1>
         <nav>
             <ul>

@@ -19,6 +19,11 @@
    .card{
         @include card();
    }
+
+   @media (max-width: $layout-greatest-tablet){
+        display: flex;
+        flex-direction: column;
+   }
 }
 
 
