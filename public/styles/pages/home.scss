@@ -11,7 +11,7 @@
 
 
 .header{
-    @include header("../../assets/images/black-woman-tecnology.jpg", 0 -50px);
+    @include header("https://ik.imagekit.io/es2e8pxot/images/black-woman-tecnology.jpg", 0 -50px);
     
     @media (max-width: 1368px) {
         background-position: center;
