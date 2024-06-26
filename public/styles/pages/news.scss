@@ -12,6 +12,10 @@
     margin-top: 12rem;
     background-color: $white-900;
     padding: $xxxl-font 0;
+
+    .container{
+        padding: 0 $vsm-font;
+    }
 }
 
 .cards{
