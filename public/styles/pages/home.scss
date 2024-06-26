@@ -30,13 +30,25 @@
     .container{
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $layout-tablet){
+            flex-direction: column;
+        }
         
         padding-top: $xxxl-font;
         padding-bottom: $xxxl-font;
 
         .img-container{
+            @media (max-width: $layout-tablet){
+                margin: 0 auto;
+            }
+
             img{
                 width: 30rem;
+
+                @media (max-width: $layout-mobile){
+                   width: 100%;
+                }
             }
         }
         
@@ -60,6 +72,8 @@
     background-color: $black-200;
     color: $white-900;
 
+   
+
     // height: 70rem;
 
     .container{
@@ -75,6 +89,15 @@
             justify-content: space-between;
             gap: $xl-font;
             overflow: hidden;
+
+            @media (max-width: $layout-tablet){
+                flex-direction: column-reverse;
+                align-items: center;
+
+                br{
+                    display: none;
+                }
+            }
 
             h3 {
                 font-family: $title-fonts;
@@ -93,6 +116,10 @@
 
                 img:first-of-type{
                     width: 20rem;
+
+                    @media (max-width: $layout-tablet){
+                        width: 15rem;
+                    }
                     
                     position: relative;
                     right: 20px;
@@ -100,6 +127,10 @@
                 
                 img:nth-of-type(2){
                     width: 20rem;
+
+                    @media (max-width: $layout-tablet){
+                        width: 15rem;
+                    }
             
                     position: relative;
                     right: 60px;
@@ -110,6 +141,10 @@
             
                 img:nth-of-type(3){
                     width: 20rem;
+
+                    @media (max-width: $layout-tablet){
+                        width: 15rem;
+                    }
             
                     position: relative;
                     right: -30px;
@@ -118,6 +153,10 @@
             
                 img:nth-of-type(4){
                     width: 25rem;
+
+                    @media (max-width: $layout-tablet){
+                        width: 20rem;
+                    }
             
                     position: relative;
                     right: 10px;
@@ -144,6 +183,16 @@
     .pioneer-container{
         display: flex;
         gap: $xxxl-font;
+
+        @media (max-width: $layout-tablet){
+            flex-direction: column;
+
+            &:nth-of-type(1){
+                flex-direction: column-reverse;
+            }
+        }
+
+        
        
         > div{
             display: flex;
@@ -172,10 +221,18 @@
         }
         
         .pioneer-image{
+            @media (max-width: $layout-tablet){
+                align-items: center;
+            }
+
             display: flex;
             flex-direction: column;
             img{
                 width: 40rem;
+
+                @media (max-width: $layout-mobile){
+                   width: 100%;
+                }
             }
 
             span{
@@ -200,7 +257,14 @@
 
     .container{
         display: flex;
+        gap: $xl-font;
         justify-content: space-between;
+
+        @media (max-width: $layout-tablet) {
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: $xxl-font;
+        }
         
         .about-challenges{
             flex: 1;
@@ -222,6 +286,11 @@
         }
 
         img{
+            @media (max-width: $layout-tablet){
+                width: 40rem;
+                max-width: 100%;
+            }
+
             width: 50rem;
         }
    }
@@ -235,7 +304,22 @@
         display: flex;
         gap: $xxxl-font;
 
+        @media (max-width: $layout-tablet){
+            flex-direction: column;
+        }
+
         .female-future-title{
+            @media (max-width: $layout-tablet){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+
             h3{
                 font-family: $title-fonts;
                 font-size: $xxxl-font;
@@ -244,6 +328,10 @@
             img{ 
                 margin-top: $xl-font;
                 width: 40rem;
+
+                @media (max-width: $layout-mobile) {
+                    width: 100%;
+                }
             }
         }
     
@@ -258,6 +346,11 @@
             }
 
             .company-action-click{
+                @media (max-width: $layout-greatest-tablet){
+                    position: initial;
+                    margin-top: $xxxl-font;
+                }
+
                 position: absolute;
                 bottom: 0;
                 right: 0;
