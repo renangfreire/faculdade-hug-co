@@ -4,12 +4,20 @@
 @import '../components/main_patterns';
 
 .header{
-    @include header("https://ik.imagekit.io/es2e8pxot/images/woman-coding.jpg", 0 0);
+    @include header("https://ik.imagekit.io/es2e8pxot/images/estrelas-alem-tempo-bg.jpg", 0 0);
 
     .header-content{
         @include header-content();
         display: flex;
         justify-content: center;
+
+        h2{
+            font-size: $xxxl-font;
+
+            @media (max-width: $layout-tablet) {
+                font-size: $xxl-font;
+            }
+        }
 
         gap: $xxxl-font;
 
@@ -17,6 +25,11 @@
             margin-bottom: 0;
             margin-top: $sm-font;
             font-size: $lg-font;
+
+            @media (max-width: $layout-tablet) {
+                font-size: $medium-font;
+            }
+
         }
     }
 }
@@ -39,6 +52,10 @@
     
         .text-container{
             padding: $xxl-font 0;
+
+            p + p {
+                margin-top: $xl-font;
+            }
         }
         
     }

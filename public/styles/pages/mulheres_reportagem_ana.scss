@@ -4,7 +4,7 @@
 @import '../components/main_patterns';
 
 .header{
-    @include header("https://ik.imagekit.io/es2e8pxot/images/woman-coding.jpg", 0 0);
+    @include header("https://ik.imagekit.io/es2e8pxot/images/reportagem-ana-bg.jpg", 0 0);
 
     .header-content{
         @include header-content();

@@ -87,8 +87,7 @@
 }
 
 .flex-text_img{
-    @media (max-width: $layout-tablet){
-        display: inline;
+    @media (max-width: $layout-greatest-tablet){
         flex-direction: column;
         
         img{

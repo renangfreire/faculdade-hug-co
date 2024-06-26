@@ -28,7 +28,15 @@
         display: flex;
         gap: $xxxl-font;
 
+        @media (max-width: $layout-tablet) {
+            flex-direction: column;
+        }
+
         .honor-image{
+
+            @media (max-width: $layout-tablet) {
+                margin: 0 auto;
+            }
             
             img{
                 width: 30rem;
@@ -93,11 +101,18 @@
         padding-bottom: $xxxl-font;
         
         .honor-card-right{
-            @include honorCard($float: "right")
+            @include honorCard($float: "right");
+            @media (max-width: $layout-tablet) {
+                flex-direction: column;
+            }
         }
     
         .honor-card-left{
-            @include honorCard($float: "left")
+            @include honorCard($float: "left");
+            @media (max-width: $layout-tablet) {
+                flex-direction: column-reverse;
+            }
+            
         }
     }
 }
