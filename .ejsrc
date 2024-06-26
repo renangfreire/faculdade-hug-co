@@ -71,6 +71,18 @@
         "bg_path": "/public/assets/images/mulheres_tecnologia_podcast-bg.png",
         "title": "Mulheres na Tecnologia",
         "sub_title": "PODCAST"
+      },
+      {
+        "pg_name": "mulheres_reportagem_ana",
+        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "title": "Mulheres na tecnologia: uma história de determinação e conquista",
+        "sub_title": "“Havia o preconceito de que certas tarefas eram apenas para ‘homens’”"
+      },
+      {
+        "pg_name": "estrelas_alem_tempo",
+        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "title": "“Estrelas Além do Tempo” mostra uma história de triunfo sobre a discriminação e a injustiça",
+        "sub_title": "Produção de 2016 aborda a história real de protagonistas afro-americanas que superam as adversidades em trabalho na Nasa"
       }
   ]
 }

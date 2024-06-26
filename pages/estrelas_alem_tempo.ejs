@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gazette Co.</title>
+    <link rel="stylesheet" href="/public/styles/pages/estrelas_alem_tempo.scss">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/public/assets/fonts/higuen-font/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./public/assets/fonts/nourd-font/stylesheet.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include(`./partials/header`) %>
+
+    <main>
+        <section class="header">
+            <div class="header-shadow"></div> 
+            <div class="container">
+                <div class="header-content">
+                    <div> 
+                        <h2>
+                            “Estrelas Além do Tempo” mostra uma história de triunfo <br> sobre a discriminação e a injustiça
+                        </h2>
+                        <p class="brand-calling">
+                            Produção de 2016 aborda a história real de protagonistas <br> afro-americanas que superam as adversidades em trabalho na Nasa
+                        </p>                        
+                    </div>
+                    <div>
+                        <p class="author">Henrick Alexandre da Silva e Kauã Alves Nascimento</p>
+                        <p class="post-day">17/06/2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-development">
+            <div class="container">
+                <div>
+                    <p>
+                        “Estrelas Além do Tempo” é uma obra cinematográfica dirigida por Theodore Melfi que aborda os temas da discriminação racial e de gênero. Ambientado na década de 1960 nos Estados Unidos, o filme narra a história real de três mulheres afro-americanas -Katherine Johnson (Taraji P. Henson), Dorothy Vaughan (Octavia Spencer) e Mary Jackson (Janelle Monáe) - que enfrentaram desafios impostos por uma sociedade segregacionista para se destacarem como mentes brilhantes na NASA.
+                    </p>
+                    <p>
+                        Embora a trama tenha um foco claro em Johnson, que é descrita como um prodígio da matemática desde a infância, o filme equilibra muito bem a história das três protagonistas: enquanto ela enfrenta novos desafios ao mudar de setor, Vaughan precisa se adaptar com a chegada de um computador da IBM (que poderia tirar seu emprego futuramente) e Jackson quer estudar para se tornar uma engenheira. Porém, todas essas metas são permeadas pelo forte preconceito racial da época, mostrado no filme tanto de forma aberta, quanto velada.
+                    </p>
+                    <p>
+                        Kevin Costner também se destaca no elenco de apoio ao personificar uma espécie de “mentor” para a personagem de Taraji P. Henson, como o diretor da NASA Al Harrison. As conversas entre os dois são as melhores do filme ao mostrarem toda a diferença de oportunidade entre eles - um homem branco e uma mulher negra - apesar da paixão em comum pelos números.
+                    </p>
+                    <p>
+                        Além disso, o filme também destaca as dificuldades enfrentadas pelas mulheres na área da ciência e engenharia, em que eram frequentemente subestimadas e desencorajadas de buscar seus sonhos. Um exemplo disso é a trajetória da personagem Mary que, para se tornar uma engenheira da NASA, apesar de já ter os conhecimentos e experiências necessárias para o cargo, precisou ter uma graduação adicional para o cargo, graduação essa que Mary conseguiria apenas em uma universidade, que durante a segregação era “apenas para brancos”.
+                    </p>
+                    <p>
+                        "Estrelas Além do Tempo" é mais do que um filme sobre a história da NASA; é um testemunho inspirador da força do espírito humano e da capacidade de superar a adversidade. Ao destacar a luta contra a discriminação racial e de gênero, o filme não apenas educa e conscientiza, mas também inspira uma reflexão profunda sobre a importância da igualdade e da justiça em nossa sociedade. 
+                    </p>
+                </div>
+            
+                <div class="divisor">
+                </div>
+
+                <div class="article-author">
+                    <p class="about-author">
+                        Henrick Alexandre da Silva, aluno de ADS e aspirante a desenvolvedor de sistemas. <br>
+                        Kauã Alves Nascimento, aluno de ADS e estudante de programação nas horas vagas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <%- include(`./partials/recents_news`, {actualPage: "estrelas_alem_tempo"}) %>
+    </main>
+
+    <%- include(`./partials/footer`) %>
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>

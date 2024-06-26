@@ -1,0 +1,45 @@
+@import '../style.scss';
+@import '../components/buttons';
+@import '../components/header';
+@import '../components/main_patterns';
+
+.header{
+    @include header("/public/assets/images/woman-coding.jpg", 0 0);
+
+    .header-content{
+        @include header-content();
+        display: flex;
+        justify-content: center;
+
+        gap: $xxxl-font;
+
+        .brand-calling{
+            margin-bottom: 0;
+            margin-top: $sm-font;
+            font-size: $lg-font;
+        }
+    }
+}
+
+.text-development{
+    @include textPatterns();
+    color: $gray-100;
+
+    .flex-text_img{
+        display: flex;
+        gap: $xxl-font;
+    
+        .flex-image{
+            justify-content: center;
+    
+            img{
+                width: 50rem;
+            }
+        }
+    
+        .text-container{
+            padding: $xxl-font 0;
+        }
+        
+    }
+}

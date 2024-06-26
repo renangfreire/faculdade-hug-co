@@ -14,21 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <h1><a href="/pages/index.ejs" class="company-title">Urban Gazette Co.</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <%- include(`./partials/header`) %>
 
     <main>
-        <%- include(`./partials/header`) %>
-
+        <section class="header">
+            <div class="header-shadow"></div> 
+            <div class="container">
+                <div class="header-content">
+                    <div> 
+                        <h2>
+                            New Game!
+                        </h2>
+                        <p class="brand-calling">Animação japonesa mostra força das mulheres no desenvolvimento de games</p>                        
+                    </div>
+                    <div>
+                        <p class="author">Por Eduardo Henrique de Souza </p>
+                        <p class="post-day">17/05/2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="text-development">
             <div class="container">
                 <div>
