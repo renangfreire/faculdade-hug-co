@@ -51,6 +51,11 @@
             object-fit: cover;
             object-position: center;
             
+            @media (max-width: $layout-small-mobile) {
+                width: 12rem;
+                height: 12rem;
+            }
+            
             border-radius: 6px;
         }
         

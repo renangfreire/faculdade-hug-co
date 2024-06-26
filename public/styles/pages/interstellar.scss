@@ -31,7 +31,8 @@
     
     .flex-text_img{
         display: flex;
-
+        gap: $xxl-font;
+    
         .header-image{
             justify-content: center;
             img{
@@ -41,9 +42,8 @@
         }
 
         .text-container{
-            padding: $xxl-font;
+            padding: $xxl-font 0;
         }
-        
     }
 
     
