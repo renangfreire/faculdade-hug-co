@@ -4,7 +4,7 @@
 @import '../components/main_patterns';
 
 .header{
-    @include header("/public/assets/images/croche-tecnologia-bg.jpg", center);
+    @include header("https://ik.imagekit.io/es2e8pxot/images/croche-tecnologia-bg.jpg", center);
     
     .header-content{
         @include header-content();

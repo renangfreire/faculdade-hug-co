@@ -2,85 +2,85 @@
   "pages": [
       {
         "pg_name": "belas_mulheres",
-        "bg_path": "/public/assets/images/belas-mulheres.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/belas-mulheres.png",
         "title": "Belas Mulheres",
         "sub_title": "CRÔNICA"
       },
       {
         "pg_name": "control",
-        "bg_path": "/public/assets/images/Control-Hiss-Resonance.avif",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/Control-Hiss-Resonance.avif",
         "title": "Control",
         "sub_title": "Eleva o padrão de qualidade e representatividade no mercado."
       },
       {
         "pg_name": "interstellar",
-        "bg_path": "/public/assets/images/anne-inter.jpg",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/anne-inter.jpg",
         "title": "Protagonismo Feminino em Interstellar",
         "sub_title": "Ciência e Emoção Entrelaçadas"
       },
       {
         "pg_name": "newgame_anime",
-        "bg_path": "/public/assets/images/aoba-newgame.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/aoba-newgame.png",
         "title": "New Game!",
         "sub_title": "Animação japonesa mostra força das mulheres no desenvolvimento de games."
       },
       {
         "pg_name": "mercado-tecnologico",
-        "bg_path": "/public/assets/images/mulheres-tecnologia.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/mulheres-tecnologia.png",
         "title": " Mercado tecnológico tem ausência feminina",
         "sub_title": "Disparidade entre lideranças chega a 10 para 1."
       },
       {
         "pg_name": "quebrando_barreiras",
-        "bg_path": "/public/assets/images/quebrando_barreiras_bg.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/quebrando_barreiras_bg.png",
         "title": "Quebrando Barreiras e Construindo Futuro",
         "sub_title": "REPORTAGEM"
       },
       {
         "pg_name": "mulher_programacao",
-        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/woman-coding.jpg",
         "title": "“Mulher e programação? Não sei não”",
         "sub_title": "CRÔNICA"
       },
       {
         "pg_name": "mercury-13",
-        "bg_path": "/public/assets/images/mercury-13-bg.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/mercury-13-bg.png",
         "title": "Mercury 13",
         "sub_title": "O espaço delas - PODCAST"
       },
       {
         "pg_name": "berco-altalinguagem",
-        "bg_path": "/public/assets/images/berco-altalinguagem-bg.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/berco-altalinguagem-bg.png",
         "title": "O Berço da Alta Linguagem",
         "sub_title": ""
       },
       {
         "pg_name": "croche-tecnologia",
-        "bg_path": "/public/assets/images/croche-tecnologia-bg.jpg",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/croche-tecnologia-bg.jpg",
         "title": "Crochê e tecnologia",
         "sub_title": "A interação da IA no universo manual "
       },
       {
         "pg_name": "tecnologia_area_masculina",
-        "bg_path": "/public/assets/images/tecnologia_area_masculina-bg.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/tecnologia_area_masculina-bg.png",
         "title": "Tecnologia ainda é uma “área masculina”?",
         "sub_title": "O que as novas gerações pensam sobre o assunto e qual o panorama atual nos cursos de graduação"
       },
       {
         "pg_name": "mulheres_tecnologia_podcast",
-        "bg_path": "/public/assets/images/mulheres_tecnologia_podcast-bg.png",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/mulheres_tecnologia_podcast-bg.png",
         "title": "Mulheres na Tecnologia",
         "sub_title": "PODCAST"
       },
       {
         "pg_name": "mulheres_reportagem_ana",
-        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/woman-coding.jpg",
         "title": "Mulheres na tecnologia: uma história de determinação e conquista",
         "sub_title": "“Havia o preconceito de que certas tarefas eram apenas para ‘homens’”"
       },
       {
         "pg_name": "estrelas_alem_tempo",
-        "bg_path": "/public/assets/images/woman-coding.jpg",
+        "bg_path": "https://ik.imagekit.io/es2e8pxot/images/woman-coding.jpg",
         "title": "“Estrelas Além do Tempo” mostra uma história de triunfo sobre a discriminação e a injustiça",
         "sub_title": "Produção de 2016 aborda a história real de protagonistas afro-americanas que superam as adversidades em trabalho na Nasa"
       }
