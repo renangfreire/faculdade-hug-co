@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gazette Co.</title>
+    <link rel="stylesheet" href="/public/styles/pages/tecnologia_area_masculina.scss">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/public/assets/fonts/higuen-font/stylesheet.css">
+    <!-- <link rel="stylesheet" href="./public/assets/fonts/nourd-font/stylesheet.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include(`./partials/header`) %>
+
+    <main>
+        <section class="header">
+            <div class="header-shadow"></div> 
+            <div class="container">
+                <div class="header-content">
+                    <div> 
+                        <h2>
+                            Tecnologia <br/> ainda é uma “área masculina”?
+                        </h2>
+                        <p class="brand-calling">O que as novas gerações pensam sobre o assunto <br> e qual o panorama atual nos cursos de graduação</p>                        
+                    </div>
+                    <div>
+                        <p class="author">Por Ana Clara Rocha dos Santos e Iago Lira</p>
+                        <p class="post-day">16/05/2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark-text-development text-development">
+            <div class="container">
+                <div>
+                    <p>A área de tecnologia é geralmente tida como um território masculino, mas, ao longo da história, mulheres extraordinárias desafiaram essa narrativa deixando sua marca no mundo da computação e da inovação tecnológica. Ada Lovelace, considerada a primeira programadora do mundo; Mary Kenneth Keller, a primeira mulher a obter um doutorado em ciência da computação nos Estados Unidos; Grace Hopper, pioneira na programação de computadores e na criação da linguagem COBOL; e Carol Shaw, uma das primeiras desenvolvedoras de jogos eletrônicos, desafiaram as normas de gênero e contribuíram significativamente para o avanço da tecnologia. Nesta reportagem, verificaremos se a área TI continua sendo dominada por homens e investigar o que as novas gerações pensam sobre isto.</p>
+                </div>
+            
+                <div class="flex-text_img">
+                    <div class="text-container">
+                        <p>
+                            As mulheres vêm conquistando espaço no mercado de trabalho e reduzindo as diferenças de gênero nas carreiras e profissões. Ainda assim, a área de TI, em que as mulheres já foram destaque no século passado, parece estar fora do radar das estudantes. Segundo os dados do estudo Estatísticas de Gênero: Indicadores Sociais das Mulheres no Brasil do IBGE, em 2022 as mulheres representam cerca 60% dos alunos matriculados em cursos de graduação, porém essa representatividade na área de Tecnologia da Informação e Comunicação se reduz drasticamente para somente 15,7%, não tendo alterações expressivas ao longo dos dez anos deste indicador (2012 a 2022).
+                        </p>
+                    </div>
+                    <div class="header-image">
+                        <img src="/public/assets/images/Charge2.png" alt="Charge">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-murphy text-development">
+            <div class="container">
+                <div>
+                    <p>
+                        De acordo com Maria Luiza, 16 anos, e Luiza Marques,18 anos, que pretendem cursar Medicina Veterinária e Direito, respectivamente, uma graduação na área de tecnologia nunca foi uma possibilidade que consideraram na hora de escolher suas futuras profissões. Para Maria Luiza, faltam alguns incentivos para que seja despertado esse interesse, como redes de apoio, palestras de capacitação.
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        Segundo Juliana Alaminos, 17 anos, recém ingressante do curso de Desenvolvimento de Software, um dos grandes atrativos da área de TI são a alta empregabilidade e visibilidade que a área está tendo atualmente. Ao responder nossa pergunta sobre como ela avaliava a participação de mulheres na área de tecnologia disse: “Eu acho que a inclusão das mulheres em áreas de exatas em geral vem crescendo muito como um todo, mas muitos ainda consideram um tabu por ser uma profissão considerada masculina. Atualmente sou estudante de Desenvolvimento de Software e estou tentando mudar para ADS”, conta. “Na minha sala de 40 pessoas, 5 são mulheres, e, pelo que o professor coordenador da minha turma falou, esse é um número considerado alto se for comparado com outras turmas”, aponta.
+                    </p>
+                </div>
+
+                <div class="flex-text_img">
+                    <div class="text-container">
+                        <p>
+                            Apesar do senso comum de que os tabus de gênero nas áreas profissionais estão sendo derrubados, na prática verificamos que na área de TI a proporção de mulheres nos cursos de graduação se manteve na faixa dos 15% nos últimos 10 anos, ao passo que nas áreas tradicionalmente vistas como mais “femininas” como Educação e Saúde esse percentual beira os 70%. Conforme as entrevistadas, ainda existe uma falta de incentivo mais direcionado para as estudantes fazendo com que, até mesmo as novas gerações acabem nem considerando a possibilidade de ingressar na área no momento de decidir sobre o curso de graduação.
+                        </p>
+                    </div>
+                    <div class="flex-image">
+                        <img class="image-juliana" src="/public/assets/images/tecnologia_area_masculina-Juliana.png" alt='Foto: Juliana Alaminos, 17 anos - arquivo pessoal'>
+                        <span>Foto: Juliana Alaminos, 17 anos - arquivo pessoal'</span>
+                    </div>
+                </div>
+
+                <div class="divisor">
+                </div>
+
+                <div class="article-author">
+                    <p class="about-author">
+                        Ana Clara Rocha dos Santos, 20 anos, é estudante do curso  de ADS e tem uma paixão por jogos online.<br>
+                        Iago Lira, 29 anos, aluno de ADS e estudante de filosofia e teologia nas horas vagas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <%- include(`./partials/recents_news`, {actualPage: "tecnologia_area_masculina"}) %>
+    </main>
+
+    <%- include(`./partials/footer`) %>
+
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>

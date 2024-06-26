@@ -4,7 +4,7 @@
 @import '../components/main_patterns';
 
 .header{
-    @include header("/public/assets/images/quebrando_barreiras_bg.png", 0 0);
+    @include header("../../assets/images/tecnologia_area_masculina-bg.png", 0 0);
     
     .header-content{
         @include header-content();
@@ -14,37 +14,42 @@
         gap: $xxxl-font;
 
         .brand-calling{
+            margin-bottom: 0;
+            margin-top: $sm-font;
             font-size: $lg-font;
         }
     }
 }
 
-.header-image{
-    img{
-        margin: 0 auto;
-        width: 40rem !important;
-    }
-}
-
 .text-development{
     @include textPatterns();
-    color: $gray-100;
-
+    
     .flex-text_img{
         display: flex;
         gap: $xxl-font;
-    
-        .flex-image{
+
+        .image-juliana{
+            width: 25rem;
+        }
+        
+        .header-image{
             justify-content: center;
-    
             img{
                 width: 50rem;
             }
         }
-    
+
         .text-container{
             padding: $xxl-font 0;
         }
         
     }
 }
+
+.dark-text-development{
+    background-color: $dark-purple;
+    color: $white-900;
+}
+    
+
+    

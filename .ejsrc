@@ -59,6 +59,18 @@
         "bg_path": "/public/assets/images/croche-tecnologia-bg.jpg",
         "title": "Crochê e tecnologia",
         "sub_title": "A interação da IA no universo manual "
+      },
+      {
+        "pg_name": "tecnologia_area_masculina",
+        "bg_path": "/public/assets/images/tecnologia_area_masculina-bg.png",
+        "title": "Tecnologia ainda é uma “área masculina”?",
+        "sub_title": "O que as novas gerações pensam sobre o assunto e qual o panorama atual nos cursos de graduação"
+      },
+      {
+        "pg_name": "mulheres_tecnologia_podcast",
+        "bg_path": "/public/assets/images/mulheres_tecnologia_podcast-bg.png",
+        "title": "Mulheres na Tecnologia",
+        "sub_title": "PODCAST"
       }
   ]
 }
